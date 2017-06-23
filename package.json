@@ -1,0 +1,24 @@
+{
+  "name": "pac-scripts-selenium-benchmark",
+  "version": "0.0.1",
+  "description": "Bench your PAC scripts with Selenium and Chrome Beta",
+  "main": "index.js",
+  "dependencies": {
+    "chromedriver": "^2.30.1",
+    "selenium-webdriver": "^3.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anticensority/pac-scripts-selenium-benchmark.git"
+  },
+  "author": "Ilya Ig. Petrov",
+  "license": "GPL v3.0",
+  "bugs": {
+    "url": "https://github.com/anticensority/pac-scripts-selenium-benchmark/issues"
+  },
+  "homepage": "https://github.com/anticensority/pac-scripts-selenium-benchmark#readme"
+}

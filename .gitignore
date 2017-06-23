@@ -1,3 +1,9 @@
+# KDE Dolphin
+.directory
+
+# PAC Scripts
+*.pac
+
 # Logs
 logs
 *.log

@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "MEM READER",
+  "description": "Test you PAC-scripts in a browser",
+  "version": "0.0.0.0",
+  "icons": {
+    "128": "/icons/default-128.png"
+  },
+  "author": "ilyaigpetrov@gmail.com",
+  "homepage_url": "https://github.com/ilyaigpetrov",
+
+  "permissions": [
+      "processes"
+    , "proxy"
+    , "notifications"
+  ],
+
+  "background": {
+
+    "scripts": [
+        "00-init-apis.js"
+      , "11-error-handlers-api.js"
+      , "55-main.js"
+    ]
+
+  },
+  "browser_action": {
+    "default_title": "Open debugger"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlzo2u564AjyRwlIN2SeTP9t0XbmTwYVxCsciBbk015Jp0eCVncbEj7ECI7JzHpat37ruOyhkknMbX7bwuHW/cY3BwLh1c5Y+HhvwRatzoJo/a8BtdlJbRluJEzOnlmAdZ/4DVsjLRw3nermTmtx1cGTAEMzeWRxFGr5sbGQ9xB+S7AJZyy5MsRz+Os3CmquBOoQ5KG7Oe+7B6TxqcIJPHIdqH1B/ItlrdW7I03Lt42zjT2BjTud67fE80sfPkihjqqlEpPEsZiIPp5/UrPxcKBEwg5HbRs7mWlAEQ8f6n33vuhhpfHaqqsWxsJdLrwSUZJtYKSF+ScKxbPEA2nMr6wIDAQAB"
+
+}
