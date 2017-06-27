@@ -17,6 +17,44 @@ MEM    | Start: 12.8M / Fin: 12.8M / Diff: 0.0M
 TIME   | FindProxyForURL: 8.0ms, Total: 570.7ms
 CHKSUM | 101
 ```
+## Bloom
+
+BOOT   | set after: 193.8ms / First request after: 286.6ms
+MEM    | Start: 15.9M / Fin: 16.8M / Diff: 0.9M
+TIME   | FindProxyForURL: 6.0ms, Total: 595.1ms
+CHKSUM | 606
+
+BOOT   | set after: 148.8ms / First request after: 244.2ms
+MEM    | Start: 15.9M / Fin: 16.8M / Diff: 0.9M
+TIME   | FindProxyForURL: 14.0ms, Total: 558.5ms
+CHKSUM | 606
+
+BOOT   | set after: 150.6ms / First request after: 268.5ms
+MEM    | Start: 15.9M / Fin: 16.8M / Diff: 0.9M
+TIME   | FindProxyForURL: 9.0ms, Total: 586.5ms
+CHKSUM | 606
+
+//////
+
+BOOT   | set after: 169.1ms / First request after: 257.3ms
+MEM    | Start: 18.8M / Fin: 19.7M / Diff: 0.9M
+TIME   | FindProxyForURL: 6.0ms, Total: 566.5ms
+CHKSUM | 606
+
+BOOT   | set after: 142.4ms / First request after: 254.8ms
+MEM    | Start: 17.9M / Fin: 18.7M / Diff: 0.9M
+TIME   | FindProxyForURL: 12.0ms, Total: 556.4ms
+CHKSUM | 606
+
+BOOT   | set after: 150.5ms / First request after: 252.2ms
+MEM    | Start: 16.9M / Fin: 17.7M / Diff: 0.9M
+TIME   | FindProxyForURL: 13.0ms, Total: 566.4ms
+CHKSUM | 606
+
+BOOT   | set after: 183.9ms / First request after: 277.6ms
+MEM    | Start: 15.9M / Fin: 16.8M / Diff: 0.9M
+TIME   | FindProxyForURL: 11.0ms, Total: 541.6ms
+CHKSUM | 606
 
 ## Bin Strings Good
 
@@ -33,6 +71,23 @@ CHKSUM | 606
 BOOT   | set after: 246.2ms / First request after: 335.4ms
 MEM    | Start: 19.4M / Fin: 19.8M / Diff: 0.5M
 TIME   | FindProxyForURL: 6.0ms, Total: 612.5ms
+CHKSUM | 606
+
+///////////
+
+BOOT   | set after: 199.5ms / First request after: 265.9ms
+MEM    | Start: 19.3M / Fin: 19.8M / Diff: 0.5M
+TIME   | FindProxyForURL: 8.0ms, Total: 556.4ms
+CHKSUM | 606
+
+BOOT   | set after: 220.0ms / First request after: 274.5ms
+MEM    | Start: 19.3M / Fin: 19.8M / Diff: 0.5M
+TIME   | FindProxyForURL: 3.0ms, Total: 541.2ms
+CHKSUM | 606
+
+BOOT   | set after: 209.6ms / First request after: 274.4ms
+MEM    | Start: 21.3M / Fin: 21.8M / Diff: 0.5M
+TIME   | FindProxyForURL: 2.0ms, Total: 574.0ms
 CHKSUM | 606
 
 ## Global Object

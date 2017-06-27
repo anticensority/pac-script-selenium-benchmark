@@ -173,6 +173,7 @@ TIME   | FindProxyForURL: ${t.callTime.toFixed(1)}ms, Total: ${totalTime.toFixed
 CHKSUM | ${t.ansLen}
 
   `.trim();
+  setTimeout( () => bgWindow.apis.errorHandlers.switch('on'), 0 );
   //window.close();
 
 
