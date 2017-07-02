@@ -21,14 +21,16 @@ chrome.runtime.getBackgroundPage( (bgWindow) =>
 /******/  const originalFindProxyForURL = FindProxyForURL;
 /******/  let ansLen = 0;
 /******/  let timeAcc = 0;
-/******/  const blockRequest = "PROXY localhost:19999";
+/******/  //const blockRequest = "PROXY localhost:19999";
+/******/  const ignore = 'IGNORE';
 /******/  global.FindProxyForURL = function(url, host) {
 /******/
 /******/    if (host !== "${testedHost}") {
 /******/      if (host === 'bench-get-total-time') {
-/******/        throw timeAcc + ' ' + ansLen;
+/******/        throw 'FIN ' + timeAcc + ' ' + ansLen;
 /******/      }
-/******/      return blockRequest;
+/******/      //return blockRequest;
+/******/      throw ignore;
 /******/    }
 /******/
 /******/    const start = Date.now();
@@ -38,7 +40,8 @@ chrome.runtime.getBackgroundPage( (bgWindow) =>
 /******/    ansLen += ans.length;
 /******/
 /******/    // Don't send nerwork requests.
-/******/    return blockRequest;
+/******/    //return blockRequest;
+/******/    throw ignore;
 /******/
 /******/  };
 /******/
@@ -124,8 +127,14 @@ chrome.runtime.getBackgroundPage( (bgWindow) =>
     console.log('Got msg');
     const msg2 = msg.replace(/^.+?Uncaught /g, '');
     console.log('Replaced,', msg2);
-    window.foo = msg2;
-    [callTime, ansLen] = msg2.split(' ');
+    //window.foo = msg2;
+    const args = msg2.split(' ');
+    const cmd = args.shift();
+    if(cmd !== 'FIN') {
+      return;
+    }
+
+    [callTime, ansLen] = args;
     console.log('Removing...')
     chrome.proxy.onProxyError.removeListener(onError);
     console.log('Resolving...');
@@ -151,7 +160,7 @@ chrome.runtime.getBackgroundPage( (bgWindow) =>
   const startMem = await getMemUsageAsync();
   const startTime = performance.now();
 
-  const numberOfRequests = 100;
+  const numberOfRequests = 10000;
   let i = -1;
   console.log('Looping...')
   while(++i < numberOfRequests) {
