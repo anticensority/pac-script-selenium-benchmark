@@ -9,6 +9,7 @@ chrome.runtime.getBackgroundPage( (bgWindow) =>
 //===============================================
 
   const testedHost = document.getElementById('host-input').value || 'example.com';
+  const testedIp = document.getElementById('ip-input').value || '206.42.58.133';
 
   const patchPac = function (pacStr) {
 
@@ -19,6 +20,7 @@ chrome.runtime.getBackgroundPage( (bgWindow) =>
 /******/  "use strict";
 /******/
 /******/  const originalFindProxyForURL = FindProxyForURL;
+/******/  global.dnsResolve = () => "${testedIp}";
 /******/  let ansLen = 0;
 /******/  let timeAcc = 0;
 /******/  //const blockRequest = "PROXY localhost:19999";
@@ -127,10 +129,12 @@ chrome.runtime.getBackgroundPage( (bgWindow) =>
     console.log('Got msg');
     const msg2 = msg.replace(/^.+?Uncaught /g, '');
     console.log('Replaced,', msg2);
-    //window.foo = msg2;
     const args = msg2.split(' ');
     const cmd = args.shift();
     if(cmd !== 'FIN') {
+      if (cmd !== 'IGNORE') {
+        throw msg2;
+      }
       return;
     }
 
@@ -160,7 +164,7 @@ chrome.runtime.getBackgroundPage( (bgWindow) =>
   const startMem = await getMemUsageAsync();
   const startTime = performance.now();
 
-  const numberOfRequests = 10000;
+  const numberOfRequests = 1000;
   let i = -1;
   console.log('Looping...')
   while(++i < numberOfRequests) {

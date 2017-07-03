@@ -1,0 +1,272 @@
+## Empty
+
+1000 cycles
+
+BOOT   | set after: 13.7ms / First request after: 61.6ms
+MEM    | Start: 12.6M / Fin: 13.0M / Diff: 0.4M
+TIME   | FindProxyForURL: 7.0ms, Total: 7821.5ms
+CHKSUM | 1001
+
+BOOT   | set after: 11.9ms / First request after: 58.6ms
+MEM    | Start: 12.6M / Fin: 13.0M / Diff: 0.4M
+TIME   | FindProxyForURL: 7.0ms, Total: 8002.3ms
+CHKSUM | 1001
+
+BOOT   | set after: 11.8ms / First request after: 54.9ms
+MEM    | Start: 12.6M / Fin: 13.0M / Diff: 0.4M
+TIME   | FindProxyForURL: 4.0ms, Total: 7838.3ms
+CHKSUM | 1001
+
+## Bloom
+
+1000 cycles
+
+BOOT   | set after: 163.9ms / First request after: 297.6ms
+MEM    | Start: 15.9M / Fin: 16.9M / Diff: 0.9M
+TIME   | FindProxyForURL: 60.0ms, Total: 8258.4ms
+CHKSUM | 6006
+
+BOOT   | set after: 150.5ms / First request after: 267.2ms
+MEM    | Start: 18.8M / Fin: 19.8M / Diff: 0.9M
+TIME   | FindProxyForURL: 55.0ms, Total: 8269.5ms
+CHKSUM | 6006
+
+BOOT   | set after: 148.8ms / First request after: 271.3ms
+MEM    | Start: 16.8M / Fin: 17.8M / Diff: 0.9M
+TIME   | FindProxyForURL: 53.0ms, Total: 8259.2ms
+CHKSUM | 6006
+
+BOOT   | set after: 138.8ms / First request after: 248.2ms
+MEM    | Start: 16.9M / Fin: 17.8M / Diff: 0.9M
+TIME   | FindProxyForURL: 59.0ms, Total: 8189.0ms
+CHKSUM | 6006
+
+BOOT   | set after: 151.2ms / First request after: 249.7ms
+MEM    | Start: 15.9M / Fin: 16.9M / Diff: 1.0M
+TIME   | FindProxyForURL: 55.0ms, Total: 8177.5ms
+CHKSUM | 6006
+
+# Bloom 2 (p=0.01)
+
+1000 cycles
+
+BOOT   | set after: 88.4ms / First request after: 146.7ms
+MEM    | Start: 14.4M / Fin: 15.1M / Diff: 0.7M
+TIME   | FindProxyForURL: 51.0ms, Total: 8007.0ms
+CHKSUM | 6006
+
+BOOT   | set after: 55.8ms / First request after: 115.4ms
+MEM    | Start: 14.7M / Fin: 15.4M / Diff: 0.7M
+TIME   | FindProxyForURL: 59.0ms, Total: 8319.7ms
+CHKSUM | 6006
+
+BOOT   | set after: 48.4ms / First request after: 173.3ms
+MEM    | Start: 14.7M / Fin: 15.4M / Diff: 0.7M
+TIME   | FindProxyForURL: 44.0ms, Total: 8141.2ms
+CHKSUM | 6006
+
+BOOT   | set after: 54.4ms / First request after: 119.5ms
+MEM    | Start: 14.4M / Fin: 15.1M / Diff: 0.7M
+TIME   | FindProxyForURL: 52.0ms, Total: 8425.8ms
+CHKSUM | 6006
+
+### 10k cycles
+
+BOOT   | set after: 64.1ms / First request after: 135.4ms
+MEM    | Start: 14.4M / Fin: 15.0M / Diff: 0.6M
+TIME   | FindProxyForURL: 515.0ms, Total: 83936.6ms
+CHKSUM | 60006
+
+#### exampleb.com + dnsResolve 206.42.58.133 (worst for bin str good)
+
+BOOT   | set after: 53.3ms / First request after: 109.0ms
+MEM    | Start: 14.7M / Fin: 16.9M / Diff: 2.2M
+TIME   | FindProxyForURL: 414.0ms, Total: 80298.9ms
+CHKSUM | 60006
+
+BOOT   | set after: 74.9ms / First request after: 98.1ms
+MEM    | Start: 14.7M / Fin: 14.9M / Diff: 0.2M
+TIME   | FindProxyForURL: 401.0ms, Total: 79217.7ms
+CHKSUM | 60006
+
+# Bloom 3 (p=0.001)
+
+#### exampleb.com + dnsResolve 206.42.58.133 (worst for bin str good)
+
+BOOT   | set after: 77.1ms / First request after: 150.7ms
+MEM    | Start: 15.0M / Fin: 15.7M / Diff: 0.7M
+TIME   | FindProxyForURL: 362.0ms, Total: 80769.5ms
+CHKSUM | 60006
+
+BOOT   | set after: 74.1ms / First request after: 178.6ms
+MEM    | Start: 16.3M / Fin: 17.0M / Diff: 0.7M
+TIME   | FindProxyForURL: 466.0ms, Total: 80042.0ms
+CHKSUM | 60006
+
+BOOT   | set after: 77.0ms / First request after: 158.4ms
+MEM    | Start: 15.4M / Fin: 15.9M / Diff: 0.5M
+TIME   | FindProxyForURL: 436.0ms, Total: 79682.1ms
+CHKSUM | 60006
+
+BOOT   | set after: 71.1ms / First request after: 143.8ms
+MEM    | Start: 15.0M / Fin: 15.5M / Diff: 0.5M
+TIME   | FindProxyForURL: 445.0ms, Total: 78336.1ms
+CHKSUM | 60006
+
+## Bin Strings Good MY IMPL
+
+### 10k cycles
+
+#### exampleb.com + dnsResolve 206.42.58.133 (worst for bin str good)
+
+BOOT   | set after: 195.8ms / First request after: 239.8ms
+MEM    | Start: 20.1M / Fin: 21.0M / Diff: 0.9M
+TIME   | FindProxyForURL: 338.0ms, Total: 80315.8ms
+CHKSUM | 60006
+
+BOOT   | set after: 204.2ms / First request after: 251.4ms
+MEM    | Start: 22.1M / Fin: 23.0M / Diff: 0.9M
+TIME   | FindProxyForURL: 332.0ms, Total: 80535.6ms
+CHKSUM | 60006
+
+BOOT   | set after: 199.6ms / First request after: 255.9ms
+MEM    | Start: 20.2M / Fin: 21.1M / Diff: 0.9M
+TIME   | FindProxyForURL: 332.0ms, Total: 79750.3ms
+CHKSUM | 60006
+
+// second impl
+
+BOOT   | set after: 249.3ms / First request after: 319.0ms
+MEM    | Start: 19.5M / Fin: 20.5M / Diff: 1.0M
+TIME   | FindProxyForURL: 374.0ms, Total: 77212.5ms
+CHKSUM | 60006
+
+BOOT   | set after: 228.8ms / First request after: 301.7ms
+MEM    | Start: 19.6M / Fin: 22.6M / Diff: 3.0M
+TIME   | FindProxyForURL: 381.0ms, Total: 76964.7ms
+CHKSUM | 60006
+
+// third impl
+
+BOOT   | set after: 242.0ms / First request after: 302.3ms
+MEM    | Start: 18.2M / Fin: 19.2M / Diff: 1.0M
+TIME   | FindProxyForURL: 350.0ms, Total: 77441.1ms
+CHKSUM | 60006
+
+BOOT   | set after: 193.9ms / First request after: 265.3ms
+MEM    | Start: 18.2M / Fin: 19.2M / Diff: 1.0M
+TIME   | FindProxyForURL: 413.0ms, Total: 77858.3ms
+CHKSUM | 60006
+
+BOOT   | set after: 197.4ms / First request after: 257.2ms
+MEM    | Start: 19.6M / Fin: 20.6M / Diff: 1.0M
+TIME   | FindProxyForURL: 346.0ms, Total: 77901.5ms
+CHKSUM | 60006
+
+// 4th impl
+
+BOOT   | set after: 196.4ms / First request after: 250.8ms
+MEM    | Start: 19.6M / Fin: 20.6M / Diff: 1.0M
+TIME   | FindProxyForURL: 400.0ms, Total: 78249.7ms
+CHKSUM | 60006
+
+BOOT   | set after: 247.5ms / First request after: 302.3ms
+MEM    | Start: 21.5M / Fin: 22.5M / Diff: 1.0M
+TIME   | FindProxyForURL: 396.0ms, Total: 77944.7ms
+CHKSUM | 60006
+
+// 5th
+
+BOOT   | set after: 206.0ms / First request after: 274.4ms
+MEM    | Start: 19.6M / Fin: 20.5M / Diff: 1.0M
+TIME   | FindProxyForURL: 379.0ms, Total: 79002.7ms
+CHKSUM | 60006
+
+BOOT   | set after: 205.3ms / First request after: 253.5ms
+MEM    | Start: 18.2M / Fin: 19.2M / Diff: 1.0M
+TIME   | FindProxyForURL: 359.0ms, Total: 79062.0ms
+CHKSUM | 60006
+
+// 5th + mask
+
+BOOT   | set after: 232.1ms / First request after: 325.0ms
+MEM    | Start: 19.5M / Fin: 20.8M / Diff: 1.2M
+TIME   | FindProxyForURL: 943.0ms, Total: 80673.7ms
+CHKSUM | 60006
+
+## Bin Strings Good
+
+1000 cycles
+
+BOOT   | set after: 213.8ms / First request after: 256.0ms
+MEM    | Start: 19.3M / Fin: 19.6M / Diff: 0.3M
+TIME   | FindProxyForURL: 48.0ms, Total: 8038.7ms
+CHKSUM | 6006
+
+BOOT   | set after: 198.8ms / First request after: 266.7ms
+MEM    | Start: 17.9M / Fin: 18.3M / Diff: 0.3M
+TIME   | FindProxyForURL: 47.0ms, Total: 7966.6ms
+CHKSUM | 6006
+
+BOOT   | set after: 197.6ms / First request after: 262.9ms
+MEM    | Start: 18.0M / Fin: 18.3M / Diff: 0.3M
+TIME   | FindProxyForURL: 48.0ms, Total: 8183.1ms
+CHKSUM | 6006
+
+BOOT   | set after: 199.5ms / First request after: 257.9ms
+MEM    | Start: 18.0M / Fin: 18.3M / Diff: 0.3M
+TIME   | FindProxyForURL: 42.0ms, Total: 8330.2ms
+CHKSUM | 6006
+
+BOOT   | set after: 208.6ms / First request after: 267.7ms
+MEM    | Start: 18.0M / Fin: 18.3M / Diff: 0.3M
+TIME   | FindProxyForURL: 44.0ms, Total: 8129.0ms
+CHKSUM | 6006
+
+### 10k cycles
+
+BOOT   | set after: 213.0ms / First request after: 269.2ms
+MEM    | Start: 19.3M / Fin: 19.8M / Diff: 0.5M
+TIME   | FindProxyForURL: 440.0ms, Total: 83192.1ms
+CHKSUM | 60006
+
+#### exampleb.com + dnsResolve 206.42.58.133 (worst for bin str good)
+
+BOOT   | set after: 199.2ms / First request after: 259.7ms
+MEM    | Start: 18.0M / Fin: 18.7M / Diff: 0.7M
+TIME   | FindProxyForURL: 399.0ms, Total: 79577.4ms
+CHKSUM | 60006
+
+BOOT   | set after: 209.7ms / First request after: 273.8ms
+MEM    | Start: 17.9M / Fin: 18.7M / Diff: 0.7M
+TIME   | FindProxyForURL: 371.0ms, Total: 80255.0ms
+CHKSUM | 60006
+
+BOOT   | set after: 190.7ms / First request after: 249.5ms
+MEM    | Start: 19.3M / Fin: 20.0M / Diff: 0.7M
+TIME   | FindProxyForURL: 356.0ms, Total: 76898.1ms
+CHKSUM | 60006
+
+BOOT   | set after: 211.2ms / First request after: 269.3ms
+MEM    | Start: 18.0M / Fin: 18.7M / Diff: 0.7M
+TIME   | FindProxyForURL: 380.0ms, Total: 78052.9ms
+CHKSUM | 60006
+
+## Antizapret
+
+1000 cycles
+
+BOOT   | set after: 102.3ms / First request after: 196.2ms
+MEM    | Start: 18.5M / Fin: 18.8M / Diff: 0.3M
+TIME   | FindProxyForURL: 297.0ms, Total: 8407.5ms
+CHKSUM | 6012
+
+BOOT   | set after: 106.3ms / First request after: 198.3ms
+MEM    | Start: 19.1M / Fin: 19.4M / Diff: 0.3M
+TIME   | FindProxyForURL: 304.0ms, Total: 8073.9ms
+CHKSUM | 6012
+
+BOOT   | set after: 139.5ms / First request after: 246.5ms
+MEM    | Start: 18.5M / Fin: 20.8M / Diff: 2.3M
+TIME   | FindProxyForURL: 346.0ms, Total: 7932.3ms
+CHKSUM | 6012
