@@ -2,9 +2,9 @@
 
 ## Requirements
 
-* Google Chrome Beta or Chromium Beta,  
+* Google Chrome Beta or Chromium Beta,
 because we use `chrome.processes` API.
-* Linux  
+* Linux
 If you are not on Linux, then edit `--binary` flag in `index.js`.
 
 ## Install

@@ -35,10 +35,10 @@ chrome.runtime.getBackgroundPage( (bgWindow) =>
 /******/      throw ignore;
 /******/    }
 /******/
-/******/    const start = Date.now();
+/******/    //const start = Date.now();
 /******/    const ans = originalFindProxyForURL(url, host);
-/******/    const fin = Date.now();
-/******/    timeAcc += fin - start;
+/******/    //const fin = Date.now();
+/******/    //timeAcc += fin - start;
 /******/    ansLen += ans.length;
 /******/
 /******/    // Don't send nerwork requests.
@@ -112,7 +112,7 @@ chrome.runtime.getBackgroundPage( (bgWindow) =>
   let errorResolve = () => {};
   const onError = timeouted((details) => {
 
-    console.log('OOON ERROR!', details)
+    //console.log('OOON ERROR!', details)
     /*
       Example:
         details: "line: 7: Uncaught 222 777",
@@ -121,14 +121,14 @@ chrome.runtime.getBackgroundPage( (bgWindow) =>
     */
     if (details.error !== 'net::ERR_PAC_SCRIPT_FAILED') {
       // net::ERR_PROXY_CONNECTION_FAILED
-      console.log('NOT INTERESTED');
+      //console.log('NOT INTERESTED');
       return;
     }
-    console.log('WOW!');
+    //console.log('WOW!');
     const msg = details.details;
-    console.log('Got msg');
+    //console.log('Got msg');
     const msg2 = msg.replace(/^.+?Uncaught /g, '');
-    console.log('Replaced,', msg2);
+    //console.log('Replaced,', msg2);
     const args = msg2.split(' ');
     const cmd = args.shift();
     if(cmd !== 'FIN') {
@@ -164,7 +164,7 @@ chrome.runtime.getBackgroundPage( (bgWindow) =>
   const startMem = await getMemUsageAsync();
   const startTime = performance.now();
 
-  const numberOfRequests = 1000;
+  const numberOfRequests = 20000;
   let i = -1;
   console.log('Looping...')
   while(++i < numberOfRequests) {
